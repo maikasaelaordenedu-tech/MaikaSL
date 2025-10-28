@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MaikaSL</title>
+  <meta name="description" content="MaikaSL: muebles minimalistas, diseño curvo y materiales sostenibles. Sofás modulares, mesas y soluciones para hogares creativos. Envío a toda España." />
+  <meta name="keywords" content="muebles minimalistas, muebles diseño, sofás modulares, muebles sostenibles, muebles para parejas jóvenes" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MaikSL — Muebles minimalistas" />
+  <meta property="og:description" content="Muebles minimalistas de diseño curvo y materiales sostenibles. Hechos para hogares contemporáneos." />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD / Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "MaikaSL",
+    "description": "Muebles minimalistas y sostenibles: sofás modulares, mesas y complementos.",
+    "url": "https://tu-dominio-ejemplo.com",
+    "logo": "https://tu-dominio-ejemplo.com/logo.png",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* Minimal, modern, accessible styles */
+    :root{
+      --bg:#ffffff; --text:#0b1116; --muted:#6b7280; --accent:#222222;
+      --max:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max);margin:0 auto;padding:28px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{font-weight:700;letter-spacing:0.6px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    nav a{font-size:0.95rem;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:60px 0}
+    .hero h1{font-size:2.1rem;margin:0 0 12px}
+    .lead{color:var(--muted);line-height:1.6}
+    .cta{display:inline-block;margin-top:18px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600}
+    .mock{border-radius:12px;height:320px;background:linear-gradient(180deg,#f7f7f7,#efefef);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+
+    section{padding:48px 0;border-top:1px solid #f1f1f1}
+    h2{font-size:1.2rem;margin:0 0 14px}
+    p{margin:0 0 12px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{padding:18px;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(12,15,20,0.03);border:1px solid #f3f3f3}
+    .product-img{height:160px;border-radius:8px;background:linear-gradient(180deg,#f4f4f4,#eaeaea);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .muted{color:var(--muted)}
+
+    footer{padding:36px 0;color:var(--muted);font-size:0.9rem}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      header{padding:12px 0}
+      nav ul{display:none}
+      .mobile-toggle{display:inline-block}
+    }
+    .mobile-toggle{display:none;cursor:pointer}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header class="container" role="banner">
+    <div class="brand" aria-label="Curva Studio">Curva Studio</div>
+    <nav role="navigation" aria-label="Menú principal">
+      <button class="mobile-toggle" aria-expanded="false" aria-controls="main-menu" id="menuToggle">☰ <span class="sr-only">Abrir menú</span></button>
+      <ul id="main-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="container hero" aria-labelledby="inicio-title">
+      <div>
+        <h1 id="inicio-title">Muebles minimalistas de diseño curvo</h1>
+        <p class="lead">Curva Studio diseña muebles contemporáneos pensados para hogares creativos: formas suaves, materiales sostenibles y soluciones modulares para espacios reducidos. Calidad, estética y funcionalidad.</p>
+        <a class="cta" href="#productos">Ver productos</a>
+        <p class="muted" style="margin-top:10px;font-size:0.9rem">Envíos a toda España — Fabricación local — Garantía 2 años</p>
+      </div>
+      <div class="mock" aria-hidden="true">Imagen del producto destacado</div>
+    </section>
+
+    <section id="historia" class="container" aria-labelledby="historia-title">
+      <h2 id="historia-title">Nuestra historia</h2>
+      <p>Curva Studio nace de la búsqueda de muebles que combinan simplicidad y calidez. Inspirados en formas orgánicas, creamos piezas modulares y accesibles pensado para parejas jóvenes y profesionales creativos.</p>
+      <p class="muted">Palabras clave integradas: muebles minimalistas, muebles de diseño, muebles sostenibles.</p>
+    </section>
+
+    <section id="productos" class="container" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos destacados</h2>
+      <div class="grid">
+        <article class="card" aria-labelledby="p1">
+          <div class="product-img" role="img" aria-label="Sofá modular Curva">Sofá modular Curva</div>
+          <h3 id="p1">Sofá modular Curva</h3>
+          <p class="muted">Diseño minimalista, módulos personalizables. Ideal para apartamentos.</p>
+          <p style="margin-top:8px;font-weight:600">Desde 899€</p>
+        </article>
+
+        <article class="card" aria-labelledby="p2">
+          <div class="product-img" role="img" aria-label="Mesa Oval">Mesa Oval</div>
+          <h3 id="p2">Mesa Oval</h3>
+          <p class="muted">Mesa de comedor en roble claro, bordes redondeados y desmontable.</p>
+          <p style="margin-top:8px;font-weight:600">Desde 399€</p>
+        </article>
+
+        <article class="card" aria-labelledby="p3">
+          <div class="product-img" role="img" aria-label="Estantería Flotante">Estantería Flotante</div>
+          <h3 id="p3">Estantería Flotante</h3>
+          <p class="muted">Sistema modular para integrar libros y objetos decorativos.</p>
+          <p style="margin-top:8px;font-weight:600">Desde 149€</p>
+        </article>
+      </div>
+      <p style="margin-top:18px"><a href="#" aria-label="Ver catálogo completo">Ver catálogo completo →</a></p>
+    </section>
+
+    <section id="blog" class="container" aria-labelledby="blog-title">
+      <h2 id="blog-title">Blog</h2>
+      <div class="grid">
+        <article class="card" aria-labelledby="b1">
+          <h3 id="b1">Cómo elegir muebles para espacios pequeños</h3>
+          <p class="muted">Ideas prácticas para optimizar metros sin renunciar al estilo.</p>
+          <p style="margin-top:8px;font-size:0.9rem;color:var(--muted)">Palabras clave objetivo: muebles para espacios pequeños, muebles minimalistas.</p>
+        </article>
+
+        <article class="card" aria-labelledby="b2">
+          <h3 id="b2">Materiales sostenibles: ¿por qué importan?</h3>
+          <p class="muted">Ventajas del roble responsable y tejidos con certificado ecológico.</p>
+          <p style="margin-top:8px;font-size:0.9rem;color:var(--muted)">Palabras clave objetivo: muebles sostenibles, muebles ecológicos.</p>
+        </article>
+
+        <article class="card" aria-labelledby="b3">
+          <h3 id="b3">Mantenimiento básico de muebles de madera</h3>
+          <p class="muted">Consejos para cuidar tus piezas y alargar su vida útil.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="actividades" class="container" aria-labelledby="actividades-title">
+      <h2 id="actividades-title">Actividades y ejercicios</h2>
+      <p>En esta sección encontrarás páginas con los distintos ejercicios realizados en la asignatura.</p>
+      <ul>
+        <li><a href="#actividad-ej1">Ejercicio 1 — Lean Canvas</a></li>
+        <li><a href="#actividad-ej3">Ejercicio 3 — Selección de keywords</a></li>
+        <li><a href="#actividad-ej4">Ejercicio 4 — Creación de la página web (actual)</a></li>
+      </ul>
+
+      <article id="actividad-ej4" class="card" style="margin-top:18px">
+        <h3>Ejercicio 4</h3>
+        <p class="muted">Documentación, esquema y entrega final de la web.</p>
+        <p style="margin-top:8px">Incluye: mapa estructural, justificación, integración de keywords y contenido de ejemplo para cada sección.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Curva Studio</strong>
+        <div class="muted">Muebles minimalistas • Envíos a toda España</div>
+      </div>
+      <div class="muted">Contacto: info@curvastudio.example</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle (simple and accessible)
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('main-menu');
+    if(toggle){
+      toggle.addEventListener('click',()=>{
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        if(!expanded){
+          menu.style.display='flex';
+          menu.style.flexDirection='column';
+          menu.style.gap='12px';
+        } else {
+          menu.style.display='none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
